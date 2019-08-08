@@ -6,12 +6,13 @@ global $db;
 
 $config = array();
 if(ENVIRONMENT == 'development') {
-	define("BASE_URL", "http://localhost/nova_loja/");
-	$config['dbname'] = 'nova_loja';
+	define("BASE_URL", "http://localhost/cursos/php/bonieky_loja/");
+	$config['dbname'] = 'bonieky_loja';
 	$config['host'] = 'localhost';
 	$config['dbuser'] = 'root';
-	$config['dbpass'] = 'root';
+	$config['dbpass'] = '';
 } else {
+   // production
 	define("BASE_URL", "http://localhost/nova_loja/");
 	$config['dbname'] = 'nova_loja';
 	$config['host'] = 'localhost';
